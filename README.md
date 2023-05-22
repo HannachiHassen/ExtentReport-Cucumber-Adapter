@@ -17,4 +17,7 @@ Pre-Requisite:
     TestNG installed
     Cucumber Eclipse plugin (in case using Eclipse)
 
- # Step 1 – Add Maven dependencies to the POM
+# Step 1 – Add Maven dependencies to the POM
+# Step 2: Create a feature file in src/test/resources/
+
+I have also added a failed scenario in @FaceBookLink.

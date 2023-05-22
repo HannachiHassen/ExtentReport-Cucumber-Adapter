@@ -22,7 +22,7 @@ public class LoginPageLocators {
     @FindBy(xpath="//p[@class='oxd-text oxd-text--p oxd-alert-content-text']") 
     public WebElement invalidCredentials;
      
-    @FindBy(xpath = "//*[@id='social-icons']/a[1]/img")
+    @FindBy(xpath = "//a[@href='https://www.linkedin.com/company/orangehrm/mycompany/']//*[name()='svg']")
     public  WebElement linkedInIcon;
      
     @FindBy(xpath = "//*[@id='social-icons']/a[6]/img")  //Invalid Xpath

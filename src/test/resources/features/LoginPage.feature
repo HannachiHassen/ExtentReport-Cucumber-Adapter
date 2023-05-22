@@ -18,7 +18,7 @@ Feature: Login to HRM Application
     Then User should be able to login sucessfully and new page open
      
    @InvalidCredentials
-   Scenario Outline: Login with empty credentials
+   Scenario Outline: Login with invalid credentials
       
     Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/"
     When User enters username as "<username>" and password as "<password>"

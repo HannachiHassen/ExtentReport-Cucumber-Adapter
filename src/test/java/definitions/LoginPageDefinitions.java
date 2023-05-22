@@ -38,12 +38,6 @@ public class LoginPageDefinitions {
         // Verify home page
         Assert.assertEquals(objLogin.getErrorMessage(), expectedErrorMessage); 
     }
-    
-    @Then("User should be able to see error message {string}")
-    public void verifyCredentialsMessage(String expectedCredentialsErroMessage) {  
-        // Verify home page
-        Assert.assertEquals(objLogin.getErrorCredentials(), expectedCredentialsErroMessage); 
-    }
      
     @Then("User should be able to see LinkedIn Icon")
     public void verifyLinkedInIcon( ) {         

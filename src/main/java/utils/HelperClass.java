@@ -23,7 +23,7 @@ public class HelperClass {
         driver.manage().window().maximize();
 	}
 		
-	private static void openPage(String url) {
+	public static void openPage(String url) {
 		driver.get(url);
 	}
 	

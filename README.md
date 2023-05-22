@@ -45,3 +45,29 @@
 
         - In this class, the very first thing will do is to create the object of LoginPageLocators class so that we should be able to access all the PageFactory elements. Secondly, create a public constructor of LoginPageActions class
     
+# Step 7: Create a Step Definition file in src/test/java
+
+- Create the corresponding Step Definition file of the feature file.
+
+# Step 8: Create Hook class in src/test/java
+
+- Create the hook class that contains the Before and After hook. @Before hook contains the method to call the setup driver which will initialize the chrome driver. This will be run before any test.
+
+     - After Hook – Here will call the tearDown method.
+   
+# Step 9: Create a Cucumber Test Runner class in src/test/java
+
+- Add the extent report cucumber adapter to the runner class’s CucumberOption annotation. It is an important component of the configuration. It also ensures that the cucumber runner class recognizes and launches the extent report adapter for cucumber. Please add the following text as a plugin to the CucumberOptions as described below:
+	
+    - plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+  
+# Step 10: Create the testng.xml for the project
+
+- Right-click on the project and select TestNG -> convert to TestNG.
+  
+  
+# Step 11: Execute the code
+- Right-Click on the Runner class and select Run As -> TestNG Test.
+
+ 
+

@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePageLocators {
 
-	public HomePageLocators() {	}
-	
-	@FindBy(id = "welcome")
-    public  WebElement homePageUserName;
+	@FindBy(xpath="//h6[normalize-space()='Dashboard']")
+    public  WebElement homePageName;
 }

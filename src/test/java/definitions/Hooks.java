@@ -7,12 +7,12 @@ import utils.HelperClass;
 public class Hooks {
 
 	@Before
-	public void setUp() {
-		HelperClass.setUpDriver();
-	}
-	
-	@After
-	public static void tearDown() {
-		HelperClass.tearDown();
-	}
+    public static void setUp() { 
+       HelperClass.setUpDriver();
+    }
+     
+    @After
+    public static void tearDown() {         
+        HelperClass.tearDown();
+    }
 }

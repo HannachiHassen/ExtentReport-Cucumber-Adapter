@@ -64,10 +64,13 @@
 # Step 10: Create the testng.xml for the project
 
 - Right-click on the project and select TestNG -> convert to TestNG.
-  
-  
+    
 # Step 11: Execute the code
 - Right-Click on the Runner class and select Run As -> TestNG Test.
+
+# Step 12: View ExtentReport
+
+- Refresh the project and will see a new folder – Report. The ExtentReport will be present in that folder with the name Spark.html.
 
  
 

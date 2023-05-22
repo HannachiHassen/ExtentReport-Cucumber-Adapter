@@ -5,8 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(tags = "", 
 	features = "src/test/resources/features/LoginPage.feature", 
-	glue = "com.example.definitions"
-	
+			dryRun=false,
+			monochrome = true,
+	glue = "definitions",
+	plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}	
 )
 
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {

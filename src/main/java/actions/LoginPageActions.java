@@ -6,14 +6,14 @@ import locators.LoginPageLocators;
 import utils.HelperClass;
 
 public class LoginPageActions {
-	LoginPageLocators loginPageLocators = null;
-
-	public LoginPageActions() {
-		this.loginPageLocators = new LoginPageLocators();		 
+	LoginPageLocators loginPageLocators = null; 
+    
+    public LoginPageActions() { 
+        this.loginPageLocators = new LoginPageLocators(); 
         PageFactory.initElements(HelperClass.getDriver(),loginPageLocators);
-	}
-	
-	// Set user name in textbox
+    }
+ 
+    // Set user name in textbox
     public void setUserName(String strUserName) {
         loginPageLocators.userName.sendKeys(strUserName);
     }
@@ -31,22 +31,26 @@ public class LoginPageActions {
     // Get the title of Login Page
     public String getLoginTitle() {
         return loginPageLocators.titleText.getText();
-    }
-    
- // Get the title of Login Page
+    }     
+     
+    // Get the title of Login Page
     public String getErrorMessage() {
         return loginPageLocators.errorMessage.getText();
+        
+    }
+    
+    // Get the error message credentials
+    public String getErrorCredentials() {
+    	return loginPageLocators.invalidCredentials.getText();
     }
      
     // LinkedIn Icon is displayed
-    public Boolean getLinkedInIcon() {
-    
+    public Boolean getLinkedInIcon() {    
         return loginPageLocators.linkedInIcon.isDisplayed();
     }
      
     // FaceBook Icon is displayed
-    public Boolean getFaceBookIcon() {
-    
+    public Boolean getFaceBookIcon() {    
         return loginPageLocators.faceBookIcon.isDisplayed();
     }
   
@@ -59,6 +63,6 @@ public class LoginPageActions {
         this.setPassword(strPassword);
   
         // Click Login button
-        this.clickLogin();
+        this.clickLogin();  
     }
 }

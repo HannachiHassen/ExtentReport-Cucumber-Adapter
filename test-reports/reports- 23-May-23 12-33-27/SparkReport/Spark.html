@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Extent Spark Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 22, 2023 06:45:49 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 23, 2023 12:33:27 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 22, 2023 06:45:49 PM</h3>
+<h3>May 23, 2023 12:33:27 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 22, 2023 06:51:57 PM</h3>
+<h3>May 23, 2023 12:41:25 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -89,7 +89,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -110,7 +110,7 @@
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='100%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='62%'><b>5</b> scenarios passed</small></div>
+<div><small data-tooltip='63%'><b>7</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='37%'><b>3</b> scenarios failed,
+<small data-tooltip='36%'><b>4</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='76%'><b>19</b> steps passed</small></div>
+<div><small data-tooltip='71%'><b>23</b> steps passed</small></div>
 <div>
-<small data-tooltip='24%'><b>6</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='21%'><b>7</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login to HRM Application":348.673
+"Login to HRM Application":311.314,"HRM Application Login Inof":161.223
 };
 </script>
 <div class="row">
@@ -185,12 +185,20 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@FaceBookLink</td>
-<td>0</td>
+<td>@TwitterLink</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@YoutubeLink</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@ValidCredentials</td>
@@ -207,6 +215,30 @@ var timeline = {
 <td>0</td>
 <td>0</td>
 <td>60%</td>
+</tr>
+<tr>
+<td>@FaceBookLink</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SmokeTest</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+<tr>
+<td>@RegressionTest</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>62.5%</td>
 </tr>
 </tbody>
 </table></div>
@@ -252,20 +284,20 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 5,
-failChild: 3,
+passChild: 7,
+failChild: 4,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 19,
-failGrandChild: 6,
+passGrandChild: 23,
+failGrandChild: 7,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -287,7 +319,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@LinkedInLink</a><a class="dropdown-item" href="#">@FaceBookLink</a><a class="dropdown-item" href="#">@ValidCredentials</a><a class="dropdown-item" href="#">@InvalidCredentials</a>
+<a class="dropdown-item" href="#">@LinkedInLink</a><a class="dropdown-item" href="#">@TwitterLink</a><a class="dropdown-item" href="#">@YoutubeLink</a><a class="dropdown-item" href="#">@ValidCredentials</a><a class="dropdown-item" href="#">@InvalidCredentials</a><a class="dropdown-item" href="#">@FaceBookLink</a><a class="dropdown-item" href="#">@SmokeTest</a><a class="dropdown-item" href="#">@RegressionTest</a>
 </ul>
 </li>
 </ul>
@@ -300,7 +332,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login to HRM Application</p>
             <p class="text-sm">
-              <span>6:46:06 PM</span> / <span>00:05:48:673</span>
+              <span>12:33:29 PM</span> / <span>00:05:11:314</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -309,9 +341,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login to HRM Application</h5>
-<span class='badge badge-success'>05.22.2023 6:46:06 PM</span>
-<span class='badge badge-danger'>05.22.2023 6:51:55 PM</span>
-<span class='badge badge-default'>00:05:48:673</span>
+<span class='badge badge-success'>05.23.2023 12:33:29 PM</span>
+<span class='badge badge-danger'>05.23.2023 12:38:40 PM</span>
+<span class='badge badge-default'>00:05:11:314</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -456,9 +488,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'HASSEN-HP', ip: '192.168.209.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [24aa5b8a-71fa-47ca-8a8c-afee9b6c197c, findElement {using=xpath, value=//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:50819, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 27392, moz:profile: C:\Users\HASSEN\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:50819/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 24aa5b8a-71fa-47ca-8a8c-afee9b6c197c
+Command: [cb0d8ad6-3f19-4376-9b00-46762da58b3a, findElement {using=xpath, value=//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:62749, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23900, moz:profile: C:\Users\HASSEN\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:62749/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cb0d8ad6-3f19-4376-9b00-46762da58b3a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -478,9 +510,9 @@ Session ID: 24aa5b8a-71fa-47ca-8a8c-afee9b6c197c
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
-	at actions.LoginPageActions.getErrorMessage(LoginPageActions.java:38)
-	at definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:39)
-	at ✽.User should be able to see error message "Invalid credentials"(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:25)
+	at actions.LoginPageActions.getErrorMessage(LoginPageActions.java:43)
+	at definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:40)
+	at ✽.User should be able to see error message "Invalid credentials"(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:26)
 </textarea>
       
       </div>
@@ -526,9 +558,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'HASSEN-HP', ip: '192.168.209.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [dcbf528c-ecc0-4777-9116-dc32a0c2ac9e, findElement {using=xpath, value=//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:53702, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 26540, moz:profile: C:\Users\HASSEN\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53702/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dcbf528c-ecc0-4777-9116-dc32a0c2ac9e
+Command: [d89d26b4-b6ce-435f-a3e6-8ec2f078583e, findElement {using=xpath, value=//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:53991, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 34412, moz:profile: C:\Users\HASSEN\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53991/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d89d26b4-b6ce-435f-a3e6-8ec2f078583e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -548,9 +580,9 @@ Session ID: dcbf528c-ecc0-4777-9116-dc32a0c2ac9e
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
-	at actions.LoginPageActions.getErrorMessage(LoginPageActions.java:38)
-	at definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:39)
-	at ✽.User should be able to see error message "Invalid credentials"(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:25)
+	at actions.LoginPageActions.getErrorMessage(LoginPageActions.java:43)
+	at definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:40)
+	at ✽.User should be able to see error message "Invalid credentials"(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:26)
 </textarea>
       
       </div>
@@ -594,9 +626,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'HASSEN-HP', ip: '192.168.209.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [52df73c4-0baf-4040-bf31-2bc5e8c8f870, findElement {using=xpath, value=//*[@id='social-icons']/a[6]/img}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:63923, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37740, moz:profile: C:\Users\HASSEN\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:63923/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
+Command: [d9b43a7c-3dba-400a-9592-19902d563e41, findElement {using=xpath, value=//*[@id='social-icons']/a[6]/img}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:49262, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10312, moz:profile: C:\Users\HASSEN\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:49262/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d9b43a7c-3dba-400a-9592-19902d563e41
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -616,9 +648,9 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
-	at actions.LoginPageActions.getFaceBookIcon(LoginPageActions.java:54)
-	at definitions.LoginPageDefinitions.verifyFaceBookIcon(LoginPageDefinitions.java:49)
-	at ✽.User should be able to see FaceBook Icon(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:39)
+	at actions.LoginPageActions.getFaceBookIcon(LoginPageActions.java:59)
+	at definitions.LoginPageDefinitions.verifyFaceBookIcon(LoginPageDefinitions.java:50)
+	at ✽.User should be able to see FaceBook Icon(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:40)
 </textarea>
       
       </div>
@@ -661,6 +693,104 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </div>
           </div>
         </li>
+        <li class="test-item"  status="fail" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HRM Application Login Inof</p>
+            <p class="text-sm">
+              <span>12:38:41 PM</span> / <span>00:02:41:223</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HRM Application Login Inof</h5>
+<span class='badge badge-success'>05.23.2023 12:38:41 PM</span>
+<span class='badge badge-danger'>05.23.2023 12:41:22 PM</span>
+<span class='badge badge-default'>00:02:41:223</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>User is Logged In</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given User is on the HRMLogin page "https://opensource-demo.orangehrmlive.com/"</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="definitions.LoginPageInfoDefinitions.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="definitions.LoginPageInfoDefinitions.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "OrangeHRM"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Verify Twitter Icon on Login Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="definitions.LoginPageDefinitions.loginTest(java.lang.String)">
+                <span>Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definitions.LoginPageInfoDefinitions.verifyTwitterIcon()">
+                <span>Then User should be able to see Twitter Icon</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>Verify Youtube Icon on Login Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="definitions.LoginPageDefinitions.loginTest(java.lang.String)">
+                <span>Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="definitions.LoginPageInfoDefinitions.verifyYoutubeIcon()">
+                <span>Then User should be able to see Youtube Icon</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -674,7 +804,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -702,7 +832,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:51:19 PM</td>
+<td>12:38:16 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='44'>Verify LinkedIn Icon on Login Page</a>
 <div class="">
@@ -717,15 +847,15 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@FaceBookLink</p>
+<p class="name">@TwitterLink</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@FaceBookLink</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@TwitterLink</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -736,13 +866,49 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>18:50:30 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:38:55 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='39'>Verify FaceBook Icon on Login Page</a>
+<a href="#" class="linked" test-id='49' id='56'>Verify Twitter Icon on Login Page</a>
 <div class="">
-<span class="badge badge-default">Login to HRM Application.Verify FaceBook Icon on Login Page</span>
+<span class="badge badge-default">HRM Application Login Inof.Verify Twitter Icon on Login Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@YoutubeLink</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@YoutubeLink</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:39:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='61'>Verify Youtube Icon on Login Page</a>
+<div class="">
+<span class="badge badge-default">HRM Application Login Inof.Verify Youtube Icon on Login Page</span>
 </div>
 </td>
 </tr>
@@ -774,7 +940,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:46:06 PM</td>
+<td>12:33:29 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Login with valid credentials</a>
 <div class="">
@@ -812,7 +978,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:46:56 PM</td>
+<td>12:34:24 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='9'>Login with invalid credentials</a>
 <div class="">
@@ -822,7 +988,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:47:21 PM</td>
+<td>12:34:49 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='15'>Login with invalid credentials</a>
 <div class="">
@@ -832,7 +998,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:47:55 PM</td>
+<td>12:35:16 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='21'>Login with invalid credentials</a>
 <div class="">
@@ -842,7 +1008,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:48:30 PM</td>
+<td>12:35:40 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='27'>Login with invalid credentials</a>
 <div class="">
@@ -852,11 +1018,213 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:49:31 PM</td>
+<td>12:36:45 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='33'>Login with invalid credentials</a>
 <div class="">
 <span class="badge badge-default">Login to HRM Application.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@FaceBookLink</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FaceBookLink</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:37:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Verify FaceBook Icon on Login Page</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Verify FaceBook Icon on Login Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SmokeTest</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SmokeTest</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:38:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='50'>User is Logged In</a>
+<div class="">
+<span class="badge badge-default">HRM Application Login Inof.User is Logged In</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:38:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='56'>Verify Twitter Icon on Login Page</a>
+<div class="">
+<span class="badge badge-default">HRM Application Login Inof.Verify Twitter Icon on Login Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:39:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='61'>Verify Youtube Icon on Login Page</a>
+<div class="">
+<span class="badge badge-default">HRM Application Login Inof.Verify Youtube Icon on Login Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@RegressionTest</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegressionTest</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:33:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:34:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:35:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:35:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:36:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:37:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Verify FaceBook Icon on Login Page</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Verify FaceBook Icon on Login Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:38:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>Verify LinkedIn Icon on Login Page</a>
+<div class="">
+<span class="badge badge-default">Login to HRM Application.Verify LinkedIn Icon on Login Page</span>
 </div>
 </td>
 </tr>
@@ -904,7 +1272,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:49:08 PM</td>
+<td>12:36:20 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='31'>Then User should be able to see error message "Invalid credentials"</a>
 <div class="">
@@ -914,7 +1282,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:50:07 PM</td>
+<td>12:37:06 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='37'>Then User should be able to see error message "Invalid credentials"</a>
 <div class="">
@@ -924,7 +1292,7 @@ Session ID: 52df73c4-0baf-4040-bf31-2bc5e8c8f870
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:50:56 PM</td>
+<td>12:37:52 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='42'>Then User should be able to see FaceBook Icon</a>
 <div class="">

@@ -7,9 +7,10 @@
 #| (Data Tables)
 #@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
-	
+
+@RegressionTest	
 Feature: Login to HRM Application 
-  
+     
    @ValidCredentials
    Scenario: Login with valid credentials
       

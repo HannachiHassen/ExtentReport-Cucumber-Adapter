@@ -1,0 +1,993 @@
+[
+  {
+    "line": 12,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-23T16:33:29.388Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24300192000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 10930071200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7447961300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9276124100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3199673900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "definitions.LoginPageDefinitions.verifyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@ValidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:34:24.785Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9686660400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3438755200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10451824700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1226953900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters username as \"\" and password as \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"abc\"",
+                  "offset": 43
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152870100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should be able to see error message \"Required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Required\"",
+                  "offset": 41
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:34:49.793Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8453153300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 4966073600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11865251600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 994289400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters username as \"admin\" and password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 48
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54003900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should be able to see error message \"Required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Required\"",
+                  "offset": 41
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:35:16.144Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11362998800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 4337408900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8050775000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 881356800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters username as \"\" and password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 43
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45990400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should be able to see error message \"Required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Required\"",
+                  "offset": 41
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:35:40.839Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7649964700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 2747790900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22249346500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9812212800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters username as \"Admin\" and password as \"admin12$$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin12$$\"",
+                  "offset": 48
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@class\u003d\u0027oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027HASSEN-HP\u0027, ip: \u0027192.168.209.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [cb0d8ad6-3f19-4376-9b00-46762da58b3a, findElement {using\u003dxpath, value\u003d//span[@class\u003d\u0027oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message\u0027]}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:62749, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23900, moz:profile: C:\\Users\\HASSEN\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:62749/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: cb0d8ad6-3f19-4376-9b00-46762da58b3a\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)\r\n\tat actions.LoginPageActions.getErrorMessage(LoginPageActions.java:43)\r\n\tat definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:40)\r\n\tat ✽.User should be able to see error message \"Invalid credentials\"(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:26)\r\n",
+              "duration": 22150783500,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "User should be able to see error message \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 41
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:36:45.479Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7046559400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 2796206000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11644773800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1995177700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters username as \"admin$$\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin$$\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 50
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@class\u003d\u0027oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027HASSEN-HP\u0027, ip: \u0027192.168.209.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [d89d26b4-b6ce-435f-a3e6-8ec2f078583e, findElement {using\u003dxpath, value\u003d//span[@class\u003d\u0027oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message\u0027]}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:53991, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 34412, moz:profile: C:\\Users\\HASSEN\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53991/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d89d26b4-b6ce-435f-a3e6-8ec2f078583e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)\r\n\tat actions.LoginPageActions.getErrorMessage(LoginPageActions.java:43)\r\n\tat definitions.LoginPageDefinitions.verifyErrorMessage(LoginPageDefinitions.java:40)\r\n\tat ✽.User should be able to see error message \"Invalid credentials\"(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:26)\r\n",
+              "duration": 20015768900,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "User should be able to see error message \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 41
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.verifyErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@InvalidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:37:29.001Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8248087000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Verify FaceBook Icon on Login Page",
+        "description": "",
+        "id": "login-to-hrm-application;verify-facebook-icon-on-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 3611684100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15500227700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id\u003d\u0027social-icons\u0027]/a[6]/img\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027HASSEN-HP\u0027, ip: \u0027192.168.209.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [d9b43a7c-3dba-400a-9592-19902d563e41, findElement {using\u003dxpath, value\u003d//*[@id\u003d\u0027social-icons\u0027]/a[6]/img}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:debuggerAddress: 127.0.0.1:49262, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10312, moz:profile: C:\\Users\\HASSEN\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:49262/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d9b43a7c-3dba-400a-9592-19902d563e41\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)\r\n\tat actions.LoginPageActions.getFaceBookIcon(LoginPageActions.java:59)\r\n\tat definitions.LoginPageDefinitions.verifyFaceBookIcon(LoginPageDefinitions.java:50)\r\n\tat ✽.User should be able to see FaceBook Icon(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:40)\r\n",
+              "duration": 20407762600,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "User should be able to see FaceBook Icon",
+            "match": {
+              "location": "definitions.LoginPageDefinitions.verifyFaceBookIcon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@FaceBookLink"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:38:16.794Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9633331700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Verify LinkedIn Icon on Login Page",
+        "description": "",
+        "id": "login-to-hrm-application;verify-linkedin-icon-on-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 3546002700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10184993500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 665998600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User should be able to see LinkedIn Icon",
+            "match": {
+              "location": "definitions.LoginPageDefinitions.verifyLinkedInIcon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@LinkedInLink"
+          }
+        ]
+      }
+    ],
+    "name": "Login to HRM Application",
+    "description": "",
+    "id": "login-to-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginPage.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-23T16:38:41.120Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8684208800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User is Logged In",
+        "description": "",
+        "id": "hrm-application-login-inof;user-is-logged-in",
+        "after": [
+          {
+            "result": {
+              "duration": 5333006900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User is on the HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "definitions.LoginPageInfoDefinitions.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "page title should be \"OrangeHRM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OrangeHRM\"",
+                  "offset": 21
+                }
+              ],
+              "location": "definitions.LoginPageInfoDefinitions.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:38:55.161Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12020997300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify Twitter Icon on Login Page",
+        "description": "",
+        "id": "hrm-application-login-inof;verify-twitter-icon-on-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 7706001700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9815993700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 982001900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be able to see Twitter Icon",
+            "match": {
+              "location": "definitions.LoginPageInfoDefinitions.verifyTwitterIcon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@TwitterLink"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-23T16:39:25.702Z",
+        "before": [
+          {
+            "result": {
+              "duration": 26836964200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify Youtube Icon on Login Page",
+        "description": "",
+        "id": "hrm-application-login-inof;verify-youtube-icon-on-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 70362002600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18600001100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 842997000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be able to see Youtube Icon",
+            "match": {
+              "location": "definitions.LoginPageInfoDefinitions.verifyYoutubeIcon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@YoutubeLink"
+          }
+        ]
+      }
+    ],
+    "name": "HRM Application Login Inof",
+    "description": "",
+    "id": "hrm-application-login-inof",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginPageInfo.feature",
+    "tags": [
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -27,4 +27,10 @@ public class LoginPageLocators {
      
     @FindBy(xpath = "//*[@id='social-icons']/a[6]/img")  //Invalid Xpath
     public  WebElement faceBookIcon;
+    
+    @FindBy(xpath = "//a[@href='https://twitter.com/orangehrm?lang=en']")
+    public  WebElement twitterIcon;
+     
+    @FindBy(xpath = "//a[@href='https://www.youtube.com/c/OrangeHRMInc']")
+    public  WebElement youtubeIcon;
 }

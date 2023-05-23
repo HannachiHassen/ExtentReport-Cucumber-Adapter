@@ -10,6 +10,7 @@ import io.cucumber.java.en.When;
 import utils.HelperClass;
 
 public class LoginPageDefinitions {
+		
 	LoginPageActions objLogin = new LoginPageActions();
     HomePageActions objHomePage = new HomePageActions();         
   
@@ -17,7 +18,7 @@ public class LoginPageDefinitions {
     public void loginTest(String url) {         
         HelperClass.openPage(url);  
     }
-  
+        
     @When("User enters username as {string} and password as {string}")
     public void goToHomePage(String userName, String passWord) {
   
@@ -25,7 +26,7 @@ public class LoginPageDefinitions {
         objLogin.login(userName, passWord);
   
         // go the next page         
-    }
+    }    
   
     @Then("User should be able to login sucessfully and new page open")
     public void verifyLogin() {  

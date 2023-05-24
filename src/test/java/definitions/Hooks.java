@@ -8,7 +8,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utils.HelperClass;
-import static utils.base64Screenshot.*;
+import static utils.ScreenshotUtils.*;
 
 public class Hooks {
 

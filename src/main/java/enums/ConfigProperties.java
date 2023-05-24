@@ -1,6 +1,6 @@
 package enums;
 
 public enum ConfigProperties {
-	URL
-
+	URL,
+	BROWSER, 
 }

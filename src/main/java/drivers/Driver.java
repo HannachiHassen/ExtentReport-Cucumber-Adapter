@@ -10,7 +10,6 @@ import utils.PropertyUtlis;
 public final class Driver {
 
 	private Driver() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public static void initDriver(String browser) {

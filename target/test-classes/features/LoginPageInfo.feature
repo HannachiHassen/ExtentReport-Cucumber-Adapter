@@ -1,5 +1,5 @@
 
-@SmokeTest
+@LoginInfoTest
 Feature: HRM Application Login Inof 
 
    @PageTitle

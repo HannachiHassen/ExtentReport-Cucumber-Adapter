@@ -8,7 +8,7 @@
 #@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
 
-@RegressionTest	
+@LoginPageTest
 Feature: Login to HRM Application 
      
    @ValidCredentials

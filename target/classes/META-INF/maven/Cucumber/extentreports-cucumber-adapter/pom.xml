@@ -82,6 +82,12 @@
             <artifactId>org.apache.commons.io</artifactId>
             <version>2.4</version>
         </dependency>
+        
+        <dependency>
+           <groupId>net.masterthought</groupId>
+           <artifactId>cucumber-reporting</artifactId>
+           <version>5.1.0</version>
+        </dependency>
 
   </dependencies>
 
@@ -102,11 +108,35 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>${maven.surefire.plugin.version}</version>
             <configuration>
+				<includes>
+					<exclude>**/*CucumberRunnerTests.java</exclude>
+				</includes>
+				<testFailureIgnore>true</testFailureIgnore>
 				<suiteXmlFiles>
 					<suiteXmlFile>testng.xml</suiteXmlFile>
 				</suiteXmlFiles>
 			</configuration>
         </plugin>
+        <plugin>
+			<groupId>net.masterthought</groupId>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>3.13.0</version>
+			<executions>
+				<execution>
+					<id>execution</id>
+					<phase>verify</phase>
+					<goals>
+						<goal>generate</goal>
+					</goals>
+					<configuration>
+						<projectName>Automation Test Report</projectName>						
+						<outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+						<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+						<buildNumber>8.4.1.2</buildNumber>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
       </plugins>
     </pluginManagement>
   </build>

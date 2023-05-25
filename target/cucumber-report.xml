@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.199">
+    <testcase classname="Login to HRM Application" name="Login with valid credentials" time="12.724">
+        <failure message="Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'HASSEN-HP', ip: '192.168.209.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/".skipped
+When User enters username as "Admin" and password as "admin123".............skipped
+Then User should be able to login sucessfully and new page open.............skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'HASSEN-HP', ip: '192.168.209.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
+	at utils.HelperClass.<init>(HelperClass.java:21)
+	at utils.HelperClass.setUpDriver(HelperClass.java:37)
+	at definitions.Hooks.setUp(Hooks.java:17)
+]]></failure>
+    </testcase>
+</testsuite>

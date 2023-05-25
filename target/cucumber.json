@@ -1,0 +1,117 @@
+[
+  {
+    "line": 12,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-25T15:08:17.741Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027HASSEN-HP\u0027, ip: \u0027192.168.209.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [null, newSession {capabilities\u003d[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities\u003dCapabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:179)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:110)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat utils.HelperClass.\u003cinit\u003e(HelperClass.java:21)\r\n\tat utils.HelperClass.setUpDriver(HelperClass.java:37)\r\n\tat definitions.Hooks.setUp(Hooks.java:17)\r\n",
+              "duration": 12485152200,
+              "status": "failed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because the return value of \"utils.HelperClass.getDriver()\" is null\r\n\tat utils.ScreenshotUtils.getBase64Screenshot(ScreenshotUtils.java:15)\r\n\tat definitions.Hooks.tearDown(Hooks.java:24)\r\n",
+              "duration": 5000300,
+              "status": "failed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000700,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1003800,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.goToHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User should be able to login sucessfully and new page open",
+            "match": {
+              "location": "definitions.LoginPageDefinitions.verifyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageTest"
+          },
+          {
+            "name": "@ValidCredentials"
+          }
+        ]
+      }
+    ],
+    "name": "Login to HRM Application",
+    "description": "",
+    "id": "login-to-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginPage.feature",
+    "tags": [
+      {
+        "name": "@LoginPageTest",
+        "type": "Tag",
+        "location": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

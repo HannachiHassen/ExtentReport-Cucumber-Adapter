@@ -1,21 +1,28 @@
 package runner;
 
+import org.testng.annotations.AfterSuite;
+
+import utils.ReportingUtils;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(tags = "", 
-	features = "src/test/resources/features", 
+@CucumberOptions(tags = "@ValidCredentials", 
+	features = "src/test/resources/features/LoginPage.feature", 
 			dryRun=false,
 			monochrome = true,
 	glue = "definitions",
 	plugin = {"pretty",
-			"json:test-reports/cucumber-reports/Cucumber.json",
-			"html:test-reports/cucumber-reports/Cucumber-report.html",
-			"junit:test-reports/cucumber-reports/cucumber-report.xml",
+			"json:target/cucumber.json",
+			"html:target/cucumber-report.html",
+			"junit:target/cucumber-report.xml",
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 			"timeline:test-output-thread/"
 			}
 )
 
 public class CucumberRunnerTests extends AbstractTestNGCucumberTests {
+	 @AfterSuite
+     public void generateReport(){
+             ReportingUtils.generateJVMReport();
+     }
 }

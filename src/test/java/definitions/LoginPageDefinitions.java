@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.HelperClass;
 
-public class LoginPageDefinitions {
+public final class LoginPageDefinitions {
 		
 	LoginPageActions objLogin = new LoginPageActions();
     HomePageActions objHomePage = new HomePageActions();         

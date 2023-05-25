@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class HelperClass {
+public final class HelperClass {
 	private static HelperClass helperClass;
 
 	private static WebDriver driver;

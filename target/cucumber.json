@@ -3,13 +3,12 @@
     "line": 12,
     "elements": [
       {
-        "start_timestamp": "2023-05-25T15:08:17.741Z",
+        "start_timestamp": "2023-05-25T19:08:49.238Z",
         "before": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027HASSEN-HP\u0027, ip: \u0027192.168.209.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [null, newSession {capabilities\u003d[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities\u003dCapabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:179)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:110)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat utils.HelperClass.\u003cinit\u003e(HelperClass.java:21)\r\n\tat utils.HelperClass.setUpDriver(HelperClass.java:37)\r\n\tat definitions.Hooks.setUp(Hooks.java:17)\r\n",
-              "duration": 12485152200,
-              "status": "failed"
+              "duration": 17239000700,
+              "status": "passed"
             },
             "match": {
               "location": "definitions.Hooks.setUp()"
@@ -23,9 +22,8 @@
         "after": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because the return value of \"utils.HelperClass.getDriver()\" is null\r\n\tat utils.ScreenshotUtils.getBase64Screenshot(ScreenshotUtils.java:15)\r\n\tat definitions.Hooks.tearDown(Hooks.java:24)\r\n",
-              "duration": 5000300,
-              "status": "failed"
+              "duration": 5381994400,
+              "status": "passed"
             },
             "match": {
               "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -37,8 +35,8 @@
         "steps": [
           {
             "result": {
-              "duration": 4000700,
-              "status": "skipped"
+              "duration": 6190002700,
+              "status": "passed"
             },
             "line": 17,
             "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
@@ -55,8 +53,8 @@
           },
           {
             "result": {
-              "duration": 1003800,
-              "status": "skipped"
+              "duration": 2433996500,
+              "status": "passed"
             },
             "line": 18,
             "name": "User enters username as \"Admin\" and password as \"admin123\"",
@@ -77,8 +75,8 @@
           },
           {
             "result": {
-              "duration": 1000500,
-              "status": "skipped"
+              "duration": 489998000,
+              "status": "passed"
             },
             "line": 19,
             "name": "User should be able to login sucessfully and new page open",
@@ -94,6 +92,78 @@
           },
           {
             "name": "@ValidCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-25T19:09:21.222Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14010999000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Verify FaceBook Icon on Login Page",
+        "description": "",
+        "id": "login-to-hrm-application;verify-facebook-icon-on-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2339999400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8235004200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is on HRMLogin page \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://opensource-demo.orangehrmlive.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "definitions.LoginPageDefinitions.loginTest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id\u003d\u0027social-icons\u0027]/a[6]/img\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027HASSEN-HP\u0027, ip: \u0027192.168.209.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [8ce73716-58d8-4173-9227-cd770558bd75, findElement {using\u003dxpath, value\u003d//*[@id\u003d\u0027social-icons\u0027]/a[6]/img}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:56248, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35188, moz:profile: C:\\Users\\HASSEN\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:56248/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 8ce73716-58d8-4173-9227-cd770558bd75\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)\r\n\tat actions.LoginPageActions.getFaceBookIcon(LoginPageActions.java:59)\r\n\tat definitions.LoginPageDefinitions.verifyFaceBookIcon(LoginPageDefinitions.java:50)\r\n\tat ✽.User should be able to see FaceBook Icon(file:///C:/Users/HASSEN/eclipse-workspace/extentreports-cucumber-adapter/src/test/resources/features/LoginPage.feature:40)\r\n",
+              "duration": 20062995100,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "User should be able to see FaceBook Icon",
+            "match": {
+              "location": "definitions.LoginPageDefinitions.verifyFaceBookIcon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginPageTest"
+          },
+          {
+            "name": "@FaceBookLink"
           }
         ]
       }

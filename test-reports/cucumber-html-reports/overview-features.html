@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
+                4,
+                1,
                 0,
-                0,
-                3,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,7 +106,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
+                1,
                 1
             ],
             backgroundColor: [
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -210,6 +210,7 @@ $(document).ready(function() {
         <li role="presentation"  class="active" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+          <li role="presentation" ><a href="overview-trends.html">Trends</a></li>
         <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
@@ -232,7 +233,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
         <td>1</td>
-      <td>25 May 2023, 11:10</td>
+      <td>25 May 2023, 15:10</td>
     </tr>
   </tbody>
 </table>
@@ -319,13 +320,14 @@ $(document).ready(function() {
 
 <thead>
   <tr class="header dont-sort">
-      <th></th>
+      <th colspan="2"></th>
     <th colspan="6">Steps</th>
     <th colspan="3">Scenarios</th>
     <th colspan="2">Features</th>
   </tr>
   <tr>
     <th>Feature</th>
+      <th>Qualifier</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -346,19 +348,20 @@ $(document).ready(function() {
   <tbody>
       <tr>
         <td class="tagname"><a href="report-feature_3970567371.html">Login to HRM Application</a></td>
+          <td>cucumber</td>
 
+        <td      class="passed"    >4</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >3</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
+        <td class="total">5</td>
 
-        <td >0</td>
+        <td  class="passed"    >1</td>
         <td  class="failed"    >1</td>
-        <td class="total">1</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="6005000">0.006</td>
+        <td class="duration" data-value="37411996500">37.411</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -366,30 +369,32 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
+        <td></td>
+      <td>4</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
       <td>0</td>
-      <td>0</td>
-      <td>3</td>
+      <td>5</td>
 
-      <td>0</td>
       <td>1</td>
       <td>1</td>
+      <td>2</td>
 
-      <td class="duration">0.006</td>
+      <td class="duration">37.411</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
+        <td></td>
+      <td>80.00%</td>
+      <td>20.00%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
-      <td>100.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>50.00%</td>
+      <td>50.00%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

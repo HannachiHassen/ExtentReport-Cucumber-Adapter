@@ -1,6 +1,6 @@
 # ExtentReports Version 5 for Cucumber 6 and TestNG
 
-## ## Background
+## Background
 
 Cucumber is a test automation tool following the principles of Behavioural Driven Design and living documentation. Specifications are written in a concise human readable form and executed in continuous integration.
 
@@ -183,27 +183,6 @@ configuration.addClassificationFiles(classificationFiles);
         Reportable result=reportBuilder.generateReports();
 // and here validate 'result' to decide what to do if report has failed
 ```
-There is a feature overview page:
-
-![feature overview page](./.README/feature-overview.png)
-
-And there are also feature specific results pages:
-
-![feature specific page passing](./.README/feature-passed.png)
-
-And useful information for failures:
-
-![feature specific page passing](./.README/feature-failed.png)
-
-If you have tags in your cucumber features you can see a tag overview:
-
-![Tag overview](./.README/tag-overview.png)
-
-And you can drill down into tag specific reports:
-
-![Tag report](./.README/tag-report.png)
-
-![Trends report](./.README/trends.png)
 
 ## Versioning
 

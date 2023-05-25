@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@LoginPageTest",  "@ValidCredentials", ] ,
+        labels:  [ "@FaceBookLink",  "@LoginPageTest",  "@ValidCredentials", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 50.00,  80.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 50.00,  20.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 100.00,  100.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -115,6 +115,7 @@ $(document).ready(function() {
         <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation"      class="active" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+          <li role="presentation" ><a href="overview-trends.html">Trends</a></li>
         <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
@@ -137,7 +138,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
         <td>1</td>
-      <td>25 May 2023, 11:10</td>
+      <td>25 May 2023, 15:10</td>
     </tr>
   </tbody>
 </table>
@@ -199,68 +200,85 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_587116009.html">@LoginPageTest</a></td>
+        <td class="tagname"><a href="report-tag_414598239.html">@FaceBookLink</a></td>
 
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >3</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
+        <td class="total">2</td>
 
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6005000">0.006</td>
+        <td class="duration" data-value="28297999300">28.297</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_587116009.html">@LoginPageTest</a></td>
+
+        <td      class="passed"    >4</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="37411996500">37.411</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_284256703.html">@ValidCredentials</a></td>
 
+        <td      class="passed"    >3</td>
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6005000">0.006</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="9113997200">9.113</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
+      <td>8</td>
+      <td>2</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
       <td>0</td>
-      <td>0</td>
-      <td>6</td>
+      <td>10</td>
 
-      <td>0</td>
-      <td>2</td>
-      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
 
-      <td class="duration">0.012</td>
-      <td>2</td>
+      <td class="duration">1:14.823</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>
+      <td>80.00%</td>
+      <td>20.00%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
-      <td>100.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>25.00%</td>
+      <td>75.00%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

@@ -1,6 +1,6 @@
 # ExtentReports Version 5 for Cucumber 6 and TestNG
 
-- What is ExtentReport:
+## What is ExtentReport:
 
      - ExtentReport is a logger-style reporting library for automated tests. ExtentReports uses the logging style to add information about test sessions, such as the creation of tests, adding screenshots, assigning tags, and adding events or series of steps to sequentially indicate the flow of test steps.  ExtentReports 5 is built on an open-Core. That means, both community and professional editions use the same, full-featured API with the exception of a few reporters.
 
@@ -15,10 +15,10 @@
     - [TestNG](https://testng.org/) installed - Testing Framework
     - Cucumber Eclipse plugin (in case using Eclipse)
 
-# Step 1 – Add Maven dependencies to the POM
- - Add ExtentReport dependency
+## Step 1 – Add Maven dependencies to the POM
+ Add ExtentReport maven dependency
  
- ```
+ ```xml
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
@@ -28,7 +28,7 @@
 
  - Add tech grasshopper maven dependency for Cucumber
  
- ```
+ ```xml
  <dependency>
     <groupId>tech.grasshopper</groupId>
     <artifactId>extentreports-cucumber6-adapter</artifactId>
@@ -38,25 +38,25 @@
 
 - Check The complete POM.xml for other Selenium and TestNG dependencies 
 
-# Step 2: Create a feature file in src/test/resources/
+## Step 2: Create a feature file in src/test/resources/
 
  - I have also added a failed scenario in @FaceBookLink.
 
-# Step 3: Create extent.properties file in src/test/resources
+## Step 3: Create extent.properties file in src/test/resources
 
 - We need to create the extent.properties file at the src/test/resources folder for the grasshopper extent report adapter to recognize it. Using a property file for reporting is quite helpful if you want to define several different properties.
 
-# Step 4: Create a Helper class in src/main/java
+## Step 4: Create a Helper class in src/main/java
 
 - Use Page Object Model with Cucumber and TestNG.
 
     - Create a Helper class where we are initializing the web driver, initializing the web driver wait, defining the timeouts, and creating a private constructor of the class, within it will declare the web driver, so whenever we create an object of this class, a new web browser is invoked. We are using a setter and getter method to get the object of Chromedriver with the help of a private constructor itself within the same class.
     
-# Step 5: Create Locator classes in src/main/java
+## Step 5: Create Locator classes in src/main/java
 
 - Create a locator class for each page that contains the detail of the locators of all the web elements. Here, I’m creating 2 locator classes – LoginPageLocators and HomePageLocators.    
 
-# Step 6: Create Action classes in src/main/java
+## Step 6: Create Action classes in src/main/java
 
 - Create the action classes for each web page. These action classes contain all the methods needed by the step definitions. In this case, I have created 2 action classes – LoginPageActions and HomePageActions
 
@@ -64,30 +64,30 @@
 
         - In this class, the very first thing will do is to create the object of LoginPageLocators class so that we should be able to access all the PageFactory elements. Secondly, create a public constructor of LoginPageActions class
     
-# Step 7: Create a Step Definition file in src/test/java
+## Step 7: Create a Step Definition file in src/test/java
 
 - Create the corresponding Step Definition file of the feature file.
 
-# Step 8: Create Hook class in src/test/java
+## Step 8: Create Hook class in src/test/java
 
 - Create the hook class that contains the Before and After hook. @Before hook contains the method to call the setup driver which will initialize the chrome driver. This will be run before any test.
 
      - After Hook – Here will call the tearDown method.
    
-# Step 9: Create a Cucumber Test Runner class in src/test/java
+## Step 9: Create a Cucumber Test Runner class in src/test/java
 
 - Add the extent report cucumber adapter to the runner class’s CucumberOption annotation. It is an important component of the configuration. It also ensures that the cucumber runner class recognizes and launches the extent report adapter for cucumber. Please add the following text as a plugin to the CucumberOptions as described below:
 	
     - plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
   
-# Step 10: Create the testng.xml for the project
+## Step 10: Create the testng.xml for the project
 
 - Right-click on the project and select TestNG -> convert to TestNG.
     
-# Step 11: Execute the code
+## Step 11: Execute the code
 - Right-Click on the Runner class and select Run As -> TestNG Test.
 
-# Step 12: View ExtentReport
+## Step 12: View ExtentReport
 
 - Refresh the project and will see a new folder – test-reports. 
 - The Spark ExtentReport will be present in test-reports/SparkReport folder with the name Spark.html
@@ -99,7 +99,7 @@
     
      - Click on the first icon present on the left side of the report. To view the details about the steps, click on the scenarios. Clicking on the scenario will expand, showing off the details of the steps of each scenario.
      
-# Step 13: How to customize the report folder name
+## Step 13: How to customize the report folder name
  - We learned how to generate an ExtentReport in Cucumber Junit in the previous section. The problem with the previous approach is that it will continue to override the previous report once the new report is created. Typically, we must keep a backup of all the reports generated by previous tests. To accomplish this, we must save each report with a unique report name or folder name.
 
 - It’s simple to create reports with different folder names using the Extent reporter plugin adapter. Two settings must be added to our extent. basefolder.name and basefolder.datetimepattern are properties files. The values assigned to these will be combined to form a folder name. As a result, a report will be generated within that. The basefolder.datetimepattern value must be in a valid date-time format.
